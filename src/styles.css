@@ -1,8 +1,4 @@
-h1 {
-    color: blue;
-    font-size: 40px;
-    text-align: center;
-}
+
 
 .header {
     font-size: 30px;
@@ -10,6 +6,9 @@ h1 {
 
 input {
     width: 100%;
+    padding: 12px 20px;
+    
+  
 }
 
 .degree {
@@ -17,11 +16,15 @@ input {
 }
 
 img {
-    max-width: 150px;
+    max-width: 300px;
     display: block;
     margin: 0 auto;
 }
 
 .week {
     text-align: center;
+}
+.container{
+    margin: 0 auto;
+    text-align: center; 
 }
