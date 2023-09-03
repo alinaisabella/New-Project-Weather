@@ -20,71 +20,58 @@
  
 </head>
 
-  <body>
-    <div class="container">
-   
-    <div class="container border">
-      <div class="row">
-      
-<div class= "upper">
-        <div class="col  header">
-          
+  </head>
+   <  <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
             <div class="col-6">
-          <div id="city1"> Current Weather in Munich </div>
-          <h2 id = date> Date<h2>
-        </div>
-        
-      
-          <p>
-              <div class="row">   
-                °C <div class="col-3 degree" id="temperature">
-         25 </div>
-      <div class="col-4 ">
-        Precipitation: <span class= "col-3" id="humidity">
-          48
-        </span>%
-        <div> Wind: </div> <div class= "col-3" id="wind">
-           10</div>km/h
-          
-       </div>
-       <div class="col-4">
-          <img src="images/beach.svg"> </img>
-             
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
             </div>
           </div>
-          </br>
-       <div class="col-12 border">
-          <form class="search-form" id="search-form">
-        <input
-        type="search"
-        placeholder="Type a city.."
-        autofocus="on"
-        autocomplete="off"
-        id="city-input"
-        class="form-control shadow-sm"
-      />
-      <input
-      type="submit"
-      value="Search"
-      class="form-control btn btn-primary shadow-sm"
-    />
-    <form>
-        <div class="col-3">
-            <button
-              class="btn btn-success w-100"
-              id="current-location-button"
-            >
-              Current
-            </button>
-          </div>
-          </div>
-        </br>
-      </div>
-            
-        
-  
-        
-     
+        </div>
       <a href="https://github.com/alinaisabella/New-Project-Weather">Open-source code</a> by Alina Suffa
   </div>
   <script src="src/index.js"></script>
